@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+
+/**
+ * @author usuario
+ *
+ */
+public class Ej18 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// Contar las veces que aparece una letra en una palabra		
+		
+	}
+
+}

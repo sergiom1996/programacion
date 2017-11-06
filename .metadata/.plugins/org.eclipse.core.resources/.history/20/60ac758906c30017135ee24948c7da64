@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+/**
+ * 
+ */
+
+/**
+ * @author usuario
+ *
+ */
+public class StringH1ej10 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// Escribir un programa que lea una frase (máximo 60 caracteres) y diga cuántas letras distintas tiene y la frecuencia de las mismas, para homogeneizar el
+		// conjunto de letras debemos trabajar solo con mayúsculas.
+		
+		String frase;
+		
+		Scanner teclado = new Scanner(System.in);
+		
+		do {
+			System.out.println("introduce una frase:");
+			frase=teclado.nextLine();
+			
+		} while ((frase.length() > 60) || (frase.length() == 1));
+		
+		
+		
+	}
+
+}

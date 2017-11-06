@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+/**
+ * 
+ */
+
+/**
+ * @author usuario
+ *
+ */
+public class H1ej14 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// Se pide representar el algoritmo que nos calcule la suma de los N primeros números pares a partir de N
+		//(si N es par sería el primer número que hay que sumar). Es decir, si insertamos un 5, nos haga la suma de 6+8+10+12+14.
+		
+		int n,suma=0;
+		
+		
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("introduce un numero:");
+		n=teclado.nextInt();
+		
+		for (int i = n; i <= 2*n ; i++) {
+			if (i%2==0) {
+				suma = suma +i;
+			}
+		}
+		
+		System.out.println("La suma de los " + n + " numeros pares desde " + n + " son " + suma);
+		
+		
+		
+	}
+
+}

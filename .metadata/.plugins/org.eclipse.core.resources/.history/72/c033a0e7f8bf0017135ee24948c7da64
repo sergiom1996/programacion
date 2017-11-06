@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+/**
+ * 
+ */
+
+/**
+ * @author usuario
+ *
+ */
+public class StringsH1ej5 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// Leer una frase por teclado (máximo 80 car) y construir otras dos cadenas de forma que una contenga los caracteres en posición par y la otra los caracteres
+		// en posición impar.
+		
+		String frase, par=" ", impar=" ";
+
+		
+		Scanner teclado = new Scanner(System.in);
+		
+		do {
+			System.out.println("introduce una frase:");
+			frase=teclado.nextLine();
+			
+		} while ((frase.length() > 80) || (frase.length() == 0));
+		
+		
+		for (int i = 0; i < frase.length(); i++) {
+			if (i+1%2==0) {
+				par.concat(frase.substring(i, i+1));
+			} else {
+				impar.concat(frase.substring(i, i+1));
+			}
+		}
+		
+		System.out.println("Los quese encuentran en una posicion par son " + par);
+		System.out.println("Los quese encuentran en una posicion impar son " + impar);
+	}
+
+}

@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+/**
+ * 
+ */
+
+/**
+ * @author usuario
+ *
+ */
+public class Ej14 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// imprimir el mayor y el menor de una serie de 5 numeros introducidos por teclado
+		
+		int n;
+		int c=0;
+		int mayor=0;
+		int menor=0;
+				
+		while (c < 5) {
+			Scanner teclado = new Scanner(System.in);
+			
+			System.out.println("introduce un numero:");
+			n=teclado.nextInt();
+			
+			if (n>mayor) {
+				mayor=n;
+			}
+			if (n<mayor) {
+				menor=n;
+			}
+			c++;
+		}
+		System.out.println("El mayor es " + mayor + " y el menor es " + menor);
+		
+	}
+
+}

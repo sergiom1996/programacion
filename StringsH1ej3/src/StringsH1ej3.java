@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+/**
+ * 
+ */
+
+/**
+ * @author usuario
+ *
+ */
+public class StringsH1ej3 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// Programa que lea una frase y una palabra y que nos diga la posición de dicha palabra en la frase y si no la encuentra devuelva un cero.
+		
+		String frase, palabra;		
+		int sw=0;
+		
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("introduce una frase:");
+		frase=teclado.nextLine();
+		
+		System.out.println("introduce la palabra a encontrar:");
+		palabra=teclado.nextLine();
+		
+		for (int i = 0; i < frase.length()-(palabra.length()-1); i++) {
+			if (palabra.equals(frase.substring(i, i + palabra.length()))) {
+				System.out.println("La palabra se encuentra entre las posiciones " + i + " y " + (i+palabra.length()));
+				sw=1;
+			}
+		}
+		
+		if (sw==0) {
+			System.out.println("La palabra " + palabra + " no se encuentra en la frase");
+		}
+		
+	}
+
+
+}

@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+/**
+ * 
+ */
+
+/**
+ * @author usuario
+ *
+ */
+public class H1ej11 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Algoritmo que nos diga si una persona puede acceder a cursar un ciclo formativo de grado superior o no. Para acceder
+		//a un grado superior, si se tiene un título de bachiller, en caso de no tenerlo, se puede acceder si hemos superado una prueba de acceso.
+		
+		String bachiller, prueba;
+		String si="si";
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("¿Tienes bachiller?");
+		bachiller=teclado.nextLine();
+		
+		if (bachiller.equals(si)==true) {
+			System.out.println("Puedes acceder");
+		} else {
+			System.out.println("¿Tienes bachiller?");
+			prueba=teclado.nextLine();
+			if (prueba.equals(si)==true) {
+				System.out.println("Puedes acceder");
+			} else {
+				System.out.println("No puedes acceder");
+			}
+		}
+		
+		
+		
+	}
+
+}

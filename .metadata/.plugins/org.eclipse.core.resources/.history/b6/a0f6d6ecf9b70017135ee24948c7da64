@@ -1,0 +1,25 @@
+/**
+ * 
+ */
+
+/**
+ * @author usuario
+ *
+ */
+public class Ej33 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// crea un array de 20 elementos co nombres de personas e imprimelos cada uno en una fila diferente.
+		
+		String nombres[]= {"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t"};
+		
+		for (int i = 0; i < nombres.length; i++) {
+			System.out.println(nombres[i]);
+		}
+	}
+
+}

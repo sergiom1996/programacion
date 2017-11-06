@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+/**
+ * 
+ */
+
+/**
+ * @author usuario
+ *
+ */
+public class Ej15 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// leer 2 numeros e imprimir los numeros entre ellos de menos a mayor
+		// contar cuantos hay y cuantos son pares y realiza la suma de los impares
+		
+		int n1, n2;
+		int cp=0;
+		int si=0;
+		int cambio=0;
+		
+		Scanner teclado = new Scanner(System.in);
+		
+		System.out.println("introduce un numero:");
+		n1=teclado.nextInt();
+		
+		System.out.println("introduce un numero:");
+		n2=teclado.nextInt();
+		
+		if (n1>n2) {
+			cambio=n1;
+			n1=n2;
+			n2=cambio;
+		} else if (n1=n2) {
+			System.out.println();
+		}
+		
+		
+		
+	}
+
+}

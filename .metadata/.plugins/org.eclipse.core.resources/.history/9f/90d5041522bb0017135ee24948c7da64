@@ -1,0 +1,24 @@
+/**
+ * 
+ */
+
+/**
+ * @author usuario
+ *
+ */
+public class H1ej17 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// Algoritmo que lea números enteros hasta teclear 0, y nos muestre el máximo, el mínimo y la media de todos ellos. Piensa como debemos inicializar las variables.
+		
+		
+		
+		
+		
+	}
+
+}

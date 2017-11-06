@@ -1,0 +1,56 @@
+import java.util.Scanner;
+
+/**
+ * 
+ */
+
+/**
+ * @author usuario
+ *
+ */
+public class Ej18 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// Contar las veces que aparece una letra en una palabra		
+		
+		String frase, letra;
+		int posicion=0;
+		int c=0;
+		int l;
+	
+		Scanner teclado = new Scanner(System.in);
+		
+		System.out.println("introduce una frase:");
+		frase=teclado.nextLine();
+		
+		System.out.println("introduce una letra:");
+		letra=teclado.nextLine();
+		
+		l=length(frase);
+		
+		while (c<=l) {
+			if (charAT(posicion)==letra) {
+				System.out.println("hola");
+			} 
+		}
+		
+
+		
+		
+	}
+
+	private static String charAT(int posicion) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	private static int length(String frase) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

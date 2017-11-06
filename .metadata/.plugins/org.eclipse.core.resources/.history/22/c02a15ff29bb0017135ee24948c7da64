@@ -1,0 +1,59 @@
+import java.util.Scanner;
+
+/**
+ * 
+ */
+
+/**
+ * @author usuario
+ *
+ */
+public class H1ej20 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// Calcular las calificaciones de un grupo de alumnos. La nota final de cada alumno se calcula según el siguiente criterio: la parte práctica vale el 10%;
+		// la parte de problemas vale el 50% y la parte teórica el 40%. El algoritmo leerá el nombre del alumno, las tres notas, escribirá el resultado y volverá a
+		//pedir los datos del siguiente alumno hasta que el nombre sea una cadena vacía. Las notas deben estar entre 0 y 10, si no lo están, no imprimirá las notas,
+		// mostrara un mensaje de error y volverá a pedir otro alumno.
+		
+		String nombre=" ";
+		float practica,problemas,teoria,media=0;
+		
+		
+		while (!nombre.equals(null)) {
+			Scanner teclado = new Scanner(System.in);
+			System.out.println("introduce el nombre del alumno:");
+			nombre=teclado.nextLine();
+			
+			
+			System.out.println("introduce la nota de practicas:");
+			practica=teclado.nextInt();
+			
+			System.out.println("introduce la nota de problemas:");
+			problemas=teclado.nextInt();
+			
+			System.out.println("introduce la nota de teoria:");
+			teoria=teclado.nextInt();
+			
+			if ((practica<0) || (practica>10) || (problemas<0) || (problemas>10) || (teoria<0) || (teoria>10)) {
+				System.out.println("ERROR, las notas introducidas no son correctas.");
+			} else {
+				media = (float) (practica * 0.1 + problemas * 0.5 + teoria * 0.4);
+				System.out.println("La media de " + nombre + " es " + media);
+			}
+		}
+
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

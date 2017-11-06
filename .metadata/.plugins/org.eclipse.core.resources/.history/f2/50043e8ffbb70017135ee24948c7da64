@@ -1,0 +1,23 @@
+/**
+ * 
+ */
+
+/**
+ * @author usuario
+ *
+ */
+public class Ej34 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// programa que lee las notas de un alumno en 10 asignaturas que las guarde en un array y que nos diga su media.
+		
+		
+		
+		
+	}
+
+}

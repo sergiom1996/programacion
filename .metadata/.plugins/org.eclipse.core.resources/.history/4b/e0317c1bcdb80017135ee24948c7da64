@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+/**
+ * 
+ */
+
+/**
+ * @author usuario
+ *
+ */
+public class H1ej4 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// Algoritmo que lea tres números distintos y nos diga cuál de ellos es el mayor (recuerda usar la estructura
+		// condicional Si y los operadores lógicos).
+		
+		int a,b,c;
+		int resultado=0;
+		
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("introduce el numero a:");
+		a=teclado.nextInt();
+		
+		System.out.println("introduce el numero b:");
+		b=teclado.nextInt();
+		
+	}
+
+}

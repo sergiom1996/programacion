@@ -1,0 +1,63 @@
+import java.util.Scanner;
+
+/**
+ * 
+ */
+
+/**
+ * @author usuario
+ *
+ */
+public class StringsH1ej2 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// Dada una frase de no más de 80 caracteres hacer un programa que busque cuántas mayúsculas y minúsculas tiene y lo imprima
+		
+		String frase, letra;
+		int minusculas=0, mayusculas=0, espacios=0;
+		
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("introduce una frase:");
+		frase=teclado.nextLine();
+		
+		while ((frase.length() > 80) || (frase.length() == 0)) {
+			System.out.println("introduce una frase de nuevo:");
+			frase=teclado.nextLine();
+		}
+		
+		
+		byte ascii;
+		
+		for (int i = 0; i < frase.length(); i++) {
+			
+			ascii = (byte) frase.charAt(i);
+			
+			if (((ascii >= 65) && (ascii <= 90)) || (ascii == -47)) {
+				mayusculas++;
+			} else if (((ascii >= 97) && (ascii <= 122)) || (ascii == -115)) {
+				minusculas++;
+			}
+			
+			
+			
+		/*	letra=frase.substring( i, i+1); no funciona por los espacios (estos cuentan como minusculas)
+			if (letra == " ") {
+				espacios++;
+			} else if (letra==letra.toLowerCase()) {
+				minusculas++;
+			} else if (letra==letra.toUpperCase()) {
+				mayusculas++;
+			} */
+		}
+		
+		System.out.println("Hay " + minusculas + " letras en minuscula");
+		System.out.println("Hay " + mayusculas + " letras en mayuscula");
+		// System.out.println("Hay " + espacios + " espacios en la frase");
+		
+	}
+}
+

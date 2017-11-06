@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+/**
+ * 
+ */
+
+/**
+ * @author usuario
+ *
+ */
+public class H1ej15 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// Dada una secuencia de números leídos por teclado, que acabe con un –1, por ejemplo: 5,3,0,2,4,4,0,0,2,3,6,0,……,-1; Realizar el algoritmo que
+		//calcule la media aritmética. Suponemos que el usuario no insertara número negativos.
+		
+		int n=0, c=0, suma=0;
+		
+
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("introduce un numero:");
+		n=teclado.nextInt();
+		
+		while (n!= -1) {
+			c++;
+			suma=suma+n;
+			System.out.println("introduce un numero:");
+			n=teclado.nextInt();
+		}
+		
+		n=suma/c;
+		System.out.println("La media de los numeros introducidos es " + n );
+		
+	}
+
+}

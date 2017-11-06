@@ -1,0 +1,58 @@
+import java.util.Scanner;
+
+/**
+ * 
+ */
+
+/**
+ * @author usuario
+ *
+ */
+public class StringH1ej9 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Escribir un programa que lea códigos de personas de 8 caracteres de modo que los cuatro primeros sean numéricos y contenidos entre 1990-1995 (un año), el
+		//quinto carácter sea solo (H ó M) sexo, el sexto un numero que representa el curso 1 ó 2 y los caracteres séptimo y octavo pueden tener cualquier valor.Ddeben
+		// rechazarse los códigos que no cumplan estas condiciones, la finalización de entrada de códigos se produce cuando se introduce el código
+		//“00000000”. Al final el programa debe sacar un informe indicando cuántos hombres y
+		//mujeres hay matriculados en primero y segundo y cuántos códigos correctos han sido leídos.
+		
+		
+		String frase;
+		
+		int anyoi, anyof,anyo;
+		
+		Scanner teclado = new Scanner(System.in);
+		/*
+		System.out.println("introduce el anyo inicial:");
+		anyoi=teclado.nextInt();
+		
+		System.out.println("introduce el anyo final:");
+		anyof=teclado.nextInt();
+		*/
+		System.out.println("introduce el anyo :");
+		anyo=teclado.nextInt();
+		do {
+			System.out.println("introduce una frase:");
+			frase=teclado.nextLine();
+			
+			//int anyo = Integer.parseInt(frase.substring(0, 3));
+			
+			if ((anyo>=1990) || (anyo<=1995)) {
+				
+			}else{
+				System.out.println("El anyo introducido no es correcto");
+			}
+			
+		} while (frase.equals("00000000") == false);
+		
+		
+		
+		
+	}
+
+}

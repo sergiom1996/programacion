@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+/**
+ * 
+ */
+
+/**
+ * @author usuario
+ *
+ */
+public class Ej25 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// 25- Introducir un numero menor de 5000 y pasarlo a numeros romanos
+		
+		int n=0;
+		Scanner teclado = new Scanner(System.in);
+		
+		while ((n > 0) || ( n <= 5000)) {
+			System.out.println("introduce un numero:");
+			n=teclado.nextInt();
+		}
+		
+	
+		
+	}
+
+}

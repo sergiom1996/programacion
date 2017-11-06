@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+/**
+ * 
+ */
+
+/**
+ * @author usuario
+ *
+ */
+public class H1ej7 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Un colegio desea saber qué porcentaje de niños y qué porcentaje de niñas hay en el curso actual. Diseñar un algoritmo
+		//para este propósito (recuerda que para calcular el porcentaje puedes hacer una regla de 3).
+		
+		int ninio,ninia;
+		int total;
+		
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("introduce el numero de ninios:");
+		ninio=teclado.nextInt();
+		
+		System.out.println("introduce el numero de ninias:");
+		ninia=teclado.nextInt();
+		
+		total = ninio + ninia;
+		
+		ninio = ninio/total*100;
+		ninia = ninia/total*100;
+		
+	}
+
+}

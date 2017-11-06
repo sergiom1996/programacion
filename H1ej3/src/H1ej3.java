@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+/**
+ * 
+ */
+
+/**
+ * @author usuario
+ *
+ */
+public class H1ej3 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// Algoritmo que lea dos números y nos diga cuál de ellos es mayor o bien si son iguales (recuerda usar la estructura condicional SI)
+		
+		int a,b;
+		
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("introduce el numero a:");
+		a=teclado.nextInt();
+		
+		System.out.println("introduce el numero b:");
+		b=teclado.nextInt();
+		
+		if (a > b) {
+			System.out.println("El numero " + a + " es mayor que " + b);
+		} else if (a < b) {
+			System.out.println("El numero " + a + " es menor que " + b);
+		} else {
+			System.out.println("Los numeros " + a + " y " + b + " son iguales");	
+		}
+	}
+
+}

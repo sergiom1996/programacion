@@ -1,0 +1,31 @@
+/**
+ * 
+ */
+
+/**
+ * @author usuario
+ *
+ */
+public class Ej29 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// Simular 100 tiradas de 2 dados y apuntar cuantas veces sale 10
+		
+		int cont=0, dado1=0,dado2=0;
+		
+		 for (int c=0;c<=100;c++){
+			 
+			 int numAle=Math.random(6);
+			int tirada= (int) (dado1+dado2);
+				if (tirada==10){
+					cont++;
+				}
+	}
+		 System.out.println( "El numero de veces que ha salido 10 es " + cont);
+	}
+
+}

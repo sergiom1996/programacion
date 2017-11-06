@@ -1,0 +1,59 @@
+/**
+ * 
+ */
+
+/**
+ * @author usuario
+ *
+ */
+public class Ej41 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Se dispone de una tabla de 5 páginas, 10 filas y 20 columnas, que se refieren al centro, al curso y al número de alumnos
+		//de un colegio respectivamente. Imprimir la nota media por curso y la nota media máxima y su centro de pertenencia.
+		
+		int vector[][][]= null;
+		vector= new int [5][10][20];
+		float nmc=0;
+		float nmm=0;
+		int n=1;
+		
+		for (int i = 0; i < vector.length; i++) {
+			for (int j = 0; j < vector[0].length; j++) {
+				for (int k = 0; k < vector[0][0].length; k++) {
+					vector[i][j][k]=n;
+					n++;
+				}
+				n=1;
+			}
+		}
+		
+		
+		for (int i = 0; i < vector.length; i++) {
+			for (int j = 0; j < vector[0].length; j++) {
+				for (int k = 0; k < vector[0][0].length; k++) {
+					nmc = nmc + vector[i][j][k];
+				}
+				nmc=nmc/20;
+				nmm=nmm + nmc;
+				
+				System.out.println("La nota media del curso " + j + " del centro " + i + " es " + nmc);
+				
+				nmc=0;				
+			}
+			nmm=nmm/10;
+			
+			System.out.println("La nota media del centro " + i + " es " + nmm);
+			
+			nmm=0;
+		}
+		
+		
+		
+	}
+
+}
