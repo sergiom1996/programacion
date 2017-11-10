@@ -26,7 +26,7 @@ public class StringsH2ej4 {
 		
 		String nombre1, nombre2;
 		
-		String apellido1, apellido2;
+		String apellido1="", apellido2="";
 		
 		Scanner teclado = new Scanner(System.in);
 		
@@ -37,21 +37,23 @@ public class StringsH2ej4 {
 		nombre2=teclado.nextLine();
 		
 		
-		for (int i = nombre1.length(); i > 0; i++) {
+		for (int i = nombre1.length(); i > 0; i--) {
 			if (nombre1.substring(i-1, i).equals(" ")) {
 				apellido1 = nombre1.substring(i);
 			}
 		}
 		
-		for (int i = nombre2.length(); i > 0; i++) {
+		for (int i = nombre2.length(); i > 0; i--) {
 			if (nombre2.substring(i-1, i).equals(" ")) {
 				apellido2 = nombre2.substring(i);
 			}
 		}
 		
+		nombre1 = nombre1.replaceFirst(apellido1, apellido2);
+		nombre2 = nombre2.replaceFirst(apellido2, apellido1);
 		
-		
-		
+		System.out.println(nombre1);
+		System.out.println(nombre2);
 	}
 
 }
