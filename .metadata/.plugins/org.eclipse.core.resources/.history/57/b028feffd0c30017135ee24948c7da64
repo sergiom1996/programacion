@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+/**
+ * 
+ */
+
+/**
+ * @author usuario
+ *
+ */
+public class StringsH2ej1 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// Escribir un programa que pida por teclado una cadena y una letra, de manera que ponga en mayúsculas cada ocurrencia de la letra que haya en la cadena y lo
+		// muestre por pantalla.
+		
+		String palabra;
+		String letra;
+		
+		Scanner teclado = new Scanner(System.in);
+		
+		do {
+			System.out.println("introduce una palabra:");
+			palabra=teclado.nextLine();
+			
+		} while ((palabra.length() > 10) || (palabra.length() == 0));
+		
+		do {
+			System.out.println("introduce una letra:");
+			letra=teclado.nextLine();
+			
+		} while (letra.length() != 1);
+		
+		for (int i = 0; i < palabra.length(); i++) {
+			if (letra.equals(palabra.substring(i, i+1))) {
+				palabra = palabra.substring(0, i) + palabra.substring(i, i+1).toUpperCase() + palabra.substring(i+1, palabra.length());
+			} 
+		}
+		
+		System.out.println(palabra);
+		
+	}
+
+}

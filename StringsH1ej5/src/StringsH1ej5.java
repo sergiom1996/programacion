@@ -18,7 +18,7 @@ public class StringsH1ej5 {
 		// Leer una frase por teclado (máximo 80 car) y construir otras dos cadenas de forma que una contenga los caracteres en posición par y la otra los caracteres
 		// en posición impar.
 		
-		String frase, par=" ", impar=" ";
+		String frase, par="", impar="";
 
 		
 		Scanner teclado = new Scanner(System.in);

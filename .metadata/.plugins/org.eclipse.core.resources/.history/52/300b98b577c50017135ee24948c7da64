@@ -1,0 +1,82 @@
+import java.util.Scanner;
+
+/**
+ * 
+ */
+
+/**
+ * @author usuario
+ *
+ */
+public class StringH1ej9 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Escribir un programa que lea códigos de personas de 8 caracteres de modo que los cuatro primeros sean numéricos y contenidos entre 1990-1995 (un año), el
+		//quinto carácter sea solo (H ó M) sexo, el sexto un numero que representa el curso 1 ó 2 y los caracteres séptimo y octavo pueden tener cualquier valor.Ddeben
+		// rechazarse los códigos que no cumplan estas condiciones, la finalización de entrada de códigos se produce cuando se introduce el código
+		//“00000000”. Al final el programa debe sacar un informe indicando cuántos hombres y
+		//mujeres hay matriculados en primero y segundo y cuántos códigos correctos han sido leídos.
+		
+
+		String frase;
+		int h1=0, h2=0, m1=0, m2=0, correcto=0;
+		
+		String cifras = "012345";
+	
+		Scanner teclado = new Scanner(System.in);
+		
+		do {
+			System.out.println("introduce una frase:");
+			frase=teclado.nextLine();
+			
+			if (frase.length() == 8) {
+				if (frase.substring(0, 3).equals("199")) {
+					if (cifras.indexOf(frase.substring(3, 4)) != -1) {
+						int anyo = Integer.parseInt(frase.substring(0, 4));
+						
+						if ((anyo<1990) || (anyo>1995)) {
+							System.out.println("El anyo introducido no es correcto");
+						} else if (frase.substring(4, 5).equals("H") && frase.substring(5, 6).equals("1")) {
+							h1++;
+							correcto++;
+						} else if (frase.substring(4, 5).equals("H") && frase.substring(5, 6).equals("2")){
+							h2++;
+							correcto++;
+						} else if (frase.substring(4, 5).equals("M") && frase.substring(5, 6).equals("1")){
+							m1++;
+							correcto++;
+						} else if (frase.substring(4, 5).equals("M") && frase.substring(5, 6).equals("2")){
+							m2++;
+							correcto++;
+						}
+					} else {
+						System.out.println("La frase introducida no es correcta");
+					}
+				} else {
+					System.out.println("La frase introducida no es correcta");
+				}
+			} else {
+				System.out.println("La frase introducida no es correcta");
+			}
+		
+		
+		} while (frase.equals("00000000") == false);
+
+		System.out.println("Hay " + h1 + " hombres en primero.");
+		System.out.println("Hay " + m1 + " mujeres en primero.");
+		System.out.println("Hay " + h2 + " hombres en segundo.");
+		System.out.println("Hay " + m2 + " mujeres en segundo.");
+		System.out.println("Se han introducido " + correcto + " codigos correctos");
+		
+
+		
+
+	}
+
+}
+
+	

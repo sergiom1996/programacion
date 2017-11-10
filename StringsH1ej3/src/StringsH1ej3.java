@@ -29,7 +29,7 @@ public class StringsH1ej3 {
 		
 		for (int i = 0; i < frase.length()-(palabra.length()-1); i++) {
 			if (palabra.equals(frase.substring(i, i + palabra.length()))) {
-				System.out.println("La palabra se encuentra entre las posiciones " + i + " y " + (i+palabra.length()));
+				System.out.println("La palabra " + palabra + " se encuentra entre las posiciones " + i + " y " + (i+palabra.length()));
 				sw=1;
 			}
 		}

@@ -24,6 +24,8 @@ public class StringH1ej9 {
 
 		String frase;
 		int h1=0, h2=0, m1=0, m2=0, correcto=0;
+		
+		String cifras = "012345";
 	
 		Scanner teclado = new Scanner(System.in);
 		
@@ -32,21 +34,32 @@ public class StringH1ej9 {
 			frase=teclado.nextLine();
 			
 			if (frase.length() == 8) {
-				int anyo = Integer.parseInt(frase.substring(0, 4));
-				if ((anyo<1990) || (anyo>1995)) {
-					System.out.println("El anyo introducido no es correcto");
-				} else if (frase.substring(4, 5).equals("H") && frase.substring(5, 6).equals("1")) {
-					h1++;
-					correcto++;
-				} else if (frase.substring(4, 5).equals("H") && frase.substring(5, 6).equals("2")){
-					h2++;
-					correcto++;
-				} else if (frase.substring(4, 5).equals("M") && frase.substring(5, 6).equals("1")){
-					m1++;
-					correcto++;
-				} else if (frase.substring(4, 5).equals("M") && frase.substring(5, 6).equals("2")){
-					m2++;
-					correcto++;
+				if (frase.substring(0, 3).equals("199")) {
+					if (cifras.indexOf(frase.substring(3, 4)) != -1) {
+						int anyo = Integer.parseInt(frase.substring(0, 4));
+						
+						if ((anyo<1990) || (anyo>1995)) {
+							System.out.println("El anyo introducido no es correcto");
+						} else if (frase.substring(4, 5).equals("H") && frase.substring(5, 6).equals("1")) {
+							h1++;
+							correcto++;
+						} else if (frase.substring(4, 5).equals("H") && frase.substring(5, 6).equals("2")){
+							h2++;
+							correcto++;
+						} else if (frase.substring(4, 5).equals("M") && frase.substring(5, 6).equals("1")){
+							m1++;
+							correcto++;
+						} else if (frase.substring(4, 5).equals("M") && frase.substring(5, 6).equals("2")){
+							m2++;
+							correcto++;
+						} else {
+							System.out.println("La frase introducida no es correcta");
+						}
+					} else {
+						System.out.println("La frase introducida no es correcta");
+					}
+				} else {
+					System.out.println("La frase introducida no es correcta");
 				}
 			} else {
 				System.out.println("La frase introducida no es correcta");
